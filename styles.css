@@ -1,0 +1,282 @@
+body{
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+  background-image: url(images/pexels-muhammed-ensar-10725897.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 20%;
+  height: 28vw;
+  color: whitesmoke;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.header a:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.section1-container{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  padding: 30px;
+}
+.section1-container div{
+  width: 50%;
+  margin-left: 10%;
+}
+.section1-container img{
+  width: 55%;
+  margin-top: 20px;
+  border-radius: 48%;
+  box-shadow: 0px 3px 7px gray;
+}
+
+.contacts{
+  padding: 0 11%;
+}
+
+.section2-container{
+  display: grid;
+  margin: 20px;
+  
+}
+
+.education{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  margin-top: 10%;
+}
+.education h3{
+  /*font-size: 1.5vw;*/
+}
+
+.education div{
+   width: 20%;
+}
+
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-top: 6%;
+}
+
+#imageContainer {
+  margin: 2% 25%;
+  width: 400px; 
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
+}
+
+#imageContainer img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#imageContainer img.active {
+  opacity: 1;
+}
+.experience{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  margin-top: 6%;
+}
+.experience div{
+  width: 28%;
+}
+
+.languages-others{
+  display: grid;
+  padding: 0 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 6% 0;
+  border-bottom: 1px solid gray;
+  
+}
+.languages-others div{
+  width: 57%;
+}
+
+
+.footer {
+  background-color: rgb(9, 23, 77);
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  color: white;
+  font-weight: 800;
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#footer-link {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#address {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+
+.social-icon img {
+  width: 30%;
+  height: auto;
+  margin-left: 
+}
+
+/*Media queries*/
+ @media screen and (max-width: 570px){
+  .header{
+    background-image: url(images/pexels-muhammed-ensar-10725897.jpg);
+    background-size: cover;
+    width: 120%;
+    float: top;
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  main{
+    width: 158%;
+    font-size: 1.5rem;
+  }
+  
+  .section1-container{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+  }
+
+  .section1-container div{
+    width: 80%;
+    margin-left: 8%;
+  }
+
+  .section1-container img{
+    width: 50%;
+  }
+
+  .section2-container{
+    display: grid;
+    margin: 20px;
+    
+  }
+
+  .education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    border-bottom: 1px solid gray;
+  }
+  .education h3{
+      
+  }
+  
+  .education div{
+    margin: 5% 0;
+  }
+  
+  .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-top: 6%;
+  }
+  .experience div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .languages-others{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20%;
+    border-bottom: 1px solid gray;
+    
+  }
+  .languages-others div{
+    width: 90%;
+  }
+
+  footer{
+    background-color: rgb(80, 13, 80);
+    width: 100%;
+    color: white;
+  }
+  
+  .socials{
+    display: flex;
+    flex-direction: column;
+  }
+  .socials img{
+    width: 15%;
+    margin-top: 2%;
+    
+  }
+
+  
+ }
+
+
+
+
+
