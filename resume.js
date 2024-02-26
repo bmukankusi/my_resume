@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
     setInterval(rotateImages, 2000); // Rotate every 2 seconds (adjust as needed)
   });
+
 //Current date:
-var today = Date();
-document.getElementById('today').innerHTML = 'Current time: ' + today
+var todayDate = Date();
+document.getElementById('today').innerHTML = 'Current time: ' + todayDate
   
